@@ -7,6 +7,65 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+
+  --green: hsl(160deg, 100%, 30%);
+
+  --gold-light: hsl(45deg, 100%, 50%);
+  --gold-dark: hsl(45deg, 100%, 40%);
+
+  --gray-black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --gray-white: hsl(0deg, 0%, 100%);
 }
 
 /* Add styles here! */
+
+main {
+  padding: 64px 0;
+  border-top: 6px solid var(--gray-medium);
+  background-color: var(--gray-light);
+}
+
+p strong {
+  color: var(--green);
+}
+
+.max-width-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
+.intro-chunk {
+  max-width: 300px;
+  margin: 48px 0;
+  padding: 16px;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 64px 0;
+}
+
+.card {
+  background-color: var(--gray-white);
+  border-bottom: 6px solid var(--gray-medium);
+  padding: 8px 24px 0;
+}
+
+.card p {
+  margin: 24px 0;
+}
+
+.indented-heading {
+  width: fit-content;
+  margin-top: 0;
+  margin-left: -32px;
+  padding: 16px 32px;
+  border-bottom: 6px solid var(--gold-dark);
+  background-color: var(--gold-light);
+  font-size: 1.25rem;
+}
